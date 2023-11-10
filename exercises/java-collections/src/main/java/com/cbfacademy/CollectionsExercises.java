@@ -6,13 +6,35 @@ public class CollectionsExercises {
 
     public LinkedList<Integer> useLinkedList() {
         // TODO: create an empty linked list
+
+       LinkedList <Integer> integers = new LinkedList<>();
+
         //  - add 4 as the first element of the list
+
+        integers.add(4);
+
         //  - then add 5, 6, 8, 2, 9 to the list
+
+        Collections.addAll(integers, 5, 6, 8, 2, 9);
+
         //  - add another 2 as the last element of the list
+
+        integers.addLast(2);
+
         //  - add 4 as the 3rd element of the list
+
+        integers.add(2, 4);
+
         //  - invoke the method element() on the list and print the result on the screen
+
+        System.out.print(integers.element());
+       
+
         //  - return the list
-        throw new RuntimeException("Not implemented");
+
+        return integers;
+
+        // throw new RuntimeException("Not implemented");
     }
 
     public Stack<Integer> useStack() {
