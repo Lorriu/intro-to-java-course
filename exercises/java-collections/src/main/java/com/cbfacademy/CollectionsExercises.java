@@ -39,13 +39,34 @@ public class CollectionsExercises {
 
     public Stack<Integer> useStack() {
         // TODO: create an empty stack
+
+        Stack <Integer> integers = new Stack<>();
+
         //  - add 5, 6, 8, 9 to the stack
+
+        Collections.addAll(integers, 5, 6, 8, 9 );
+
         //  - print the first element of the stack on the screen
+
+        System.out.println(integers.firstElement());
+
         //  - print the last element of the stack on the screen
+
+         System.out.println(integers.lastElement());
+
         //  - invoke the method pop() on the stack and print the result on the screen
+
+        integers.pop();
+
+         System.out.println(integers);
+
         //  - invoke the push(4) method on the stack
+
+        integers.push(4);
+
         //  - return the stack
-        throw new RuntimeException("Not implemented");
+        
+        return integers;
     }
 
     public ArrayDeque<Integer> useArrayDeque() {
