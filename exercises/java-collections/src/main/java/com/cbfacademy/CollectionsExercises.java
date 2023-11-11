@@ -71,13 +71,34 @@ public class CollectionsExercises {
 
     public ArrayDeque<Integer> useArrayDeque() {
         // TODO: create an empty arrayDeque
+
+        ArrayDeque <Integer> integers = new ArrayDeque<>();
+
         //  - add 5, 6, 8, 9 to the queue
+
+        Collections.addAll(integers, 5, 6, 8, 9);
+
         //  - print the first element of the queue on the screen
+
+        System.out.println(integers.getFirst());
+
         //  - print the last element of the queue on the screen
+
+        System.out.println(integers.getLast());
+
         //  - invoke the method poll() on the queue and print the result on the screen
+
+        integers.poll();
+
+        System.out.println(integers);
+
         //  - invoke the element() method on the queue and print the result on the screen
+
+        System.out.println(integers.element());
+
         //  - return the queue
-        throw new RuntimeException("Not implemented");
+       
+        return integers;
     }
 
     public HashMap<Integer, String> useHashMap() {
