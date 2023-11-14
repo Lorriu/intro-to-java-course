@@ -27,14 +27,15 @@ public class CollectionsExercises {
 
         //  - invoke the method element() on the list and print the result on the screen
 
-        System.out.print(integers.element());
+        integers.element();
+
+        System.out.print(integers);
        
 
         //  - return the list
 
         return integers;
 
-        // throw new RuntimeException("Not implemented");
     }
 
     public Stack<Integer> useStack() {
@@ -103,17 +104,64 @@ public class CollectionsExercises {
 
     public HashMap<Integer, String> useHashMap() {
         // TODO: create an empty hash map
+
+        Map<Integer, String> programs = new HashMap<>();
+
         //  - add {1, TypeScript} entry to the map
+
+        programs.put(1, "TypeScript");
+
         //  - add {2, Kotlin} entry to the map
+
+        programs.put(2, "Kotlin");
+
         //  - add {3, Python} entry to the map
+
+         programs.put(3, "Python");
+
         //  - add {4, Java} entry to the map
+
+         programs.put(4, "Java");
+
         //  - add {5, JavaScript} entry to the map
+
+         programs.put(5, "JavaScript");
+
         //  - add {6, Rust} entry to the map
+
+         programs.put(6, "Rust");
+
         //  - determine the set of keys from the map and print it on the screen
+
+        Set<Integer> keys = programs.keySet();
+        System.out.println(keys);
+
+
         //  - determine the set of values from the map and print it on the screen
+
+        Set<String> value = programs.getValue();
+        System.out.println(value);
+
+
+        for (Map.Entry<Integer, String> entry : programs.entrySet()) {
+
+            String v = entry.getValue();
+
+            System.out.println(v);
+        };
+        
+
         //  - determine whether the map contains "English" as a language and print the result on the screen
+
+        Boolean hasLanguage = programs.containsValue("English");
+
+        System.out.println(hasLanguage);
+
+
         //  - return the map
-        throw new RuntimeException("Not implemented");
+       
+        return (HashMap<Integer, String>) programs;
+        
     }
 
     public String getName() {
