@@ -3,10 +3,10 @@ package com.cbfacademy.shapes;
 //create an abstract class `Shape` 
 public abstract class Shape {
 
-    String name;
+    private String name;
     
     //returns the area of the shape
-    abstract double getArea();
+   public abstract double getArea();
 
 
     //returns the name of the shape
