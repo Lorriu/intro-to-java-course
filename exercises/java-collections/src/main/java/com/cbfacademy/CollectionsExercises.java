@@ -11,7 +11,7 @@ public class CollectionsExercises {
 
         //  - add 4 as the first element of the list
 
-        integers.add(4);
+        integers.addFirst(4);
 
         //  - then add 5, 6, 8, 2, 9 to the list
 
@@ -27,9 +27,7 @@ public class CollectionsExercises {
 
         //  - invoke the method element() on the list and print the result on the screen
 
-        integers.element();
-
-        System.out.print(integers);
+        System.out.print(integers.element());
        
 
         //  - return the list
@@ -49,17 +47,17 @@ public class CollectionsExercises {
 
         //  - print the first element of the stack on the screen
 
-        System.out.println(integers.firstElement());
+        System.out.print(integers.firstElement());
 
         //  - print the last element of the stack on the screen
 
-         System.out.println(integers.lastElement());
+         System.out.print(integers.lastElement());
 
         //  - invoke the method pop() on the stack and print the result on the screen
 
-        integers.pop();
+        int poppedStack = integers.pop();
 
-         System.out.println(integers);
+         System.out.print(poppedStack);
 
         //  - invoke the push(4) method on the stack
 
@@ -81,21 +79,21 @@ public class CollectionsExercises {
 
         //  - print the first element of the queue on the screen
 
-        System.out.println(integers.getFirst());
+        System.out.print(integers.getFirst());
 
         //  - print the last element of the queue on the screen
 
-        System.out.println(integers.getLast());
+        System.out.print(integers.getLast());
 
         //  - invoke the method poll() on the queue and print the result on the screen
 
         integers.poll();
 
-        System.out.println(integers);
+        System.out.print(integers);
 
         //  - invoke the element() method on the queue and print the result on the screen
 
-        System.out.println(integers.element());
+        System.out.print(integers.element());
 
         //  - return the queue
        
@@ -134,20 +132,20 @@ public class CollectionsExercises {
         //  - determine the set of keys from the map and print it on the screen
 
         Set<Integer> keys = programs.keySet();
-        System.out.println(keys);
+        System.out.print(keys);
 
 
         //  - determine the set of values from the map and print it on the screen
 
-        Set<String> value = programs.getValue();
-        System.out.println(value);
+        Collection<String> value = programs.values();
+
+
+        System.out.print(value);
 
 
         for (Map.Entry<Integer, String> entry : programs.entrySet()) {
 
-            String v = entry.getValue();
-
-            System.out.println(v);
+            System.out.print( entry.getValue());
         };
         
 
@@ -155,7 +153,7 @@ public class CollectionsExercises {
 
         Boolean hasLanguage = programs.containsValue("English");
 
-        System.out.println(hasLanguage);
+        System.out.print(hasLanguage);
 
 
         //  - return the map
