@@ -5,7 +5,7 @@ public class Account {
     private int accountNumber;
     private double balance;
     private double amount;
-   private  double requested;
+    private  double requested;
 
     
     //constructor that accepts parameters representing the new account number and starting balance

@@ -22,5 +22,12 @@ public class Rectangle  extends Shape{
         return length * width;
 
     }
+
+    @Override
+    public String getName(){
+
+
+        return "Rectangle";
+    }
     
 }

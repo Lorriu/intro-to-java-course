@@ -24,6 +24,12 @@ public class Cylinder extends Shape{
         return height * Math.PI * Math.pow(radius, 2);
     }
 
+    @Override
+    public String getName(){
+        
+        return "Cylinder";
+    
+    }
 
 
 }
