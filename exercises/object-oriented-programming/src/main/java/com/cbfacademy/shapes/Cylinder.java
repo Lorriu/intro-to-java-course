@@ -19,7 +19,7 @@ public class Cylinder extends Shape{
     /*overrides the base method. The value is given by the 
     formula (`height` * `𝛑` * (`radius`<sup>2</sup>)).*/
     @Override
-    double getArea(){
+    public double getArea(){
 
         return height * Math.PI * Math.pow(radius, 2);
     }

@@ -14,40 +14,41 @@ public class Account {
         this.accountNumber = accountNumber;
         this.balance = balance;
 
-    };
+    }
 
-   // returns the current account balance
-   public double getBalance(){
+        // returns the current account balance
+        public double getBalance(){
 
 
         return this.balance;
 
-   };
+        }
 
-   //returns the account number
-   public int getAccountNumber(){
+        //returns the account number
+        public int getAccountNumber(){
 
         return this.accountNumber;
 
-   };
+        }
 
-   //deposits funds to the account and returns the new balance
-   public double deposit(double amount){
+        //deposits funds to the account and returns the new balance
+        public double deposit(double amount){
 
         this.balance += amount;
         return this.balance;
 
-   };
+         }
 
    /*withdraws funds from the account and returns the requested amount or  
    0 if the account has an insufficient balance */
-   public double withdraw(double requested){
 
-     if (this.balance >= requested) {
-        this.balance -= requested;
-            return requested;
-     } else {
-        return 0;
+        public double withdraw(double requested){
+
+            if (this.balance >= requested) {
+            this.balance -= requested;
+                return requested;
+         } else {
+            return 0;
+            }
         }
-
-};
+    }

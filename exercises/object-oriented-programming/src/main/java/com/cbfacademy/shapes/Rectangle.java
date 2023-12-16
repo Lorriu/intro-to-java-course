@@ -17,7 +17,7 @@ public class Rectangle  extends Shape{
 
     //overrides the base method. The value is given by the formula (`length` * `width`)
     @Override
-    double getArea(){
+   public double getArea(){
 
         return length * width;
 

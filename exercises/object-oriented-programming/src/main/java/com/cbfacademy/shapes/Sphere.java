@@ -17,7 +17,7 @@ public class Sphere extends Shape {
     /*overrides the base method. The value is 
     given by the formula (`4` * `𝛑` * (`radius`<sup>2</sup>))*/
     @Override
-    double getArea(){
+    public double getArea(){
 
         return 4 * Math.PI * Math.pow(radius, 2);
     }
