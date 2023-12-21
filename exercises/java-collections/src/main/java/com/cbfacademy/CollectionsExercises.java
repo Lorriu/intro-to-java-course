@@ -143,11 +143,6 @@ public class CollectionsExercises {
         System.out.print(value);
 
 
-        for (Map.Entry<Integer, String> entry : programs.entrySet()) {
-
-            System.out.print( entry.getValue());
-        };
-        
 
         //  - determine whether the map contains "English" as a language and print the result on the screen
 
