@@ -17,7 +17,6 @@ public class FlowControlExercises {
         //  - it adds the element to the list in any other case
         
 
-        public List<String> fizzBuzz(List<Integer> numbers) {
             List<String> fizzBuzzList = new ArrayList<>();
     
             for (Integer number : numbers) {

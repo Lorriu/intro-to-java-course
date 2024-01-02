@@ -87,9 +87,7 @@ public class CollectionsExercises {
 
         //  - invoke the method poll() on the queue and print the result on the screen
 
-        integers.poll();
-
-        System.out.print(integers);
+        System.out.print(integers.poll());
 
         //  - invoke the element() method on the queue and print the result on the screen
 
