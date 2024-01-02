@@ -1,22 +1,34 @@
 package com.cbfacademy.shapes;
 
+//create a `Circle` class:
+// - with a `radius` attribute
+// - and it implements the `Enclosure` interface
+
+
 public class Circle implements Enclosure {
 
-    double radius;
+    private double radius;
 
     public Circle(double radius){
         this.radius = radius;
     }
 
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
     @Override
     public double perimeter() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 2 * Math.PI * radius;
     }
 
     @Override
     public double area() {
-        // TODO Auto-generated method stub
-        return 0;
+        return Math.PI * radius * radius;
     }
 }
+
