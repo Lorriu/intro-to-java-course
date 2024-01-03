@@ -58,6 +58,8 @@ public class Shapes {
             shapes.add(circle2);
             shapes.add(circle3);
 
+        //Run the program, and print the results to the screen.
+
         System.out.println(computeArea(shapes));
         System.out.println(computePerimeter(shapes));
 

@@ -24,6 +24,8 @@ try {
 }
 ```
 
+ANSWER: Yes this is legal code. 
+
 ### Question 2
 
 What exception types can be caught by the following handler?
@@ -33,7 +35,29 @@ catch (Exception e) {
 }
 ```
 
+ANSWER: 
+ArrayIndexOutOfBoundsException: when attempting to access an array element outside the array's bounds/invalid index.
+
+NullPointerException: when you try to access or call a method on an object that is currently null.
+
+IOException: exception for input/output operations. Can occur when working with files, streams, or other input/output-related e.g FileNotFoundException(attempting to access a file that doesn't exist).
+
+ArithmeticException: Occurs due to division by zero.
+
+ClassNotFoundException: Thrown when an application tries to load a class but can't find it during runtime.
+
+RuntimeException: A broad category of exceptions that encompass various unchecked exceptions. These exceptions usually occur at runtime and may signal errors such as logical errors in the code, illegal arguments, or violations of certain assumptions
+
+SQLException: represents an error in the SQL database access or operations.
+
+
+
+
 What is wrong with using this type of exception handler?
+
+ANSWER: It's better to handle the exceptions in a more specific way, rather than using the broad catcher, as when you do find an error/exception it may be harder to pinpoint the issue with the root cause of the code thats causing the issue because its all bundled into one place, and there may be multple issues from different places. Breaking the code into specific errors/exceptions helps you to target those specific pieces of code much easier. 
+
+
 
 ### Question 3
 
@@ -49,6 +73,8 @@ try {
 }
 ```
 
+ANSWER: This issue with this code is that you have placed the broader exception above the more specific exception, so the program will never reach the ArithmeticException because all the exceptions would be caught in the first block, you would need to place the ArthmeticExeception first, so those can be caught, then all others would be searched for afterwards. 
+
 ### Question 4
 
 ```java
@@ -60,9 +86,11 @@ The above code produces (choose 1):
 
 - [ ] an error
 - [ ] a checked exception
-- [ ] an unchecked exception
+- [x] an unchecked exception
 - [ ] a compile error
 - [ ] no exception
+
+ANSWER: an unchecked exepcetion (ArrayIndexOutOfBoundsException), because the Array has been declared but it has not been instatiated with a size, so you can't allocate a value to an array that does exist yet. 
 
 ### Question 5
 
@@ -71,11 +99,13 @@ The JVM starts running your program, but the JVM can't find the Java platform cl
 
 What happens (choose 1):
 
-- [ ] an error
+- [x] an error
 - [ ] a checked exception
 - [ ] an unchecked exception
 - [ ] a compile error
 - [ ] no exception
+
+ANSWER: This is an error that happens at runtime as the class cannot be found.
 
 ## :pushpin: Custom Exceptions
 
