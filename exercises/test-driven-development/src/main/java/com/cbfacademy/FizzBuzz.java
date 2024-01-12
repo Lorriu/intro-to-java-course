@@ -6,7 +6,7 @@ public class FizzBuzz {
 
 //with a `get` method that takes a number and returns a string, but such that:
 
-    public String get(int number){
+    public static String fizzBuzz(int number){
 
             //for multiples of 15, it returns `“FizzBuzz”` instead of the number
             if (number % 15 == 0) {
@@ -28,6 +28,21 @@ public class FizzBuzz {
                     return(String.valueOf(number));
 
             }
+        }
     
+
+    public static Object generate(int i, int j) {
+        
+        
+         String str = " ";
+            for (int k = i; k <= j; k++) {
+                str += " " + fizzBuzz(k);
+            }
+
+            return str;
+        }
+
     }
-}
+
+
+
