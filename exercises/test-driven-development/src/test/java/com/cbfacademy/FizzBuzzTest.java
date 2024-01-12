@@ -13,12 +13,26 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class FizzBuzzTest {
 
     @Test
+    @DisplayName("Testing for FizzBuzz")
+    public void testFizzBuzz() {
+
+        assertEquals("FizzBuzz", FizzBuzz.fizzBuzz(15));
+
+    }
+    
+    @Test
+    @DisplayName("Testing for 1")
+    public void testOne() {
+
+        assertEquals("1", FizzBuzz.generate(1, 1));
+
+    }
+    
+    @Test
     @DisplayName("Testing for Fizz")
     public void testFizz() {
 
-        assertEquals("FizzBuzz", FizzBuzz.fizzBuzz(15));
-        assertEquals(" 1", FizzBuzz.generate(1, 1));
-        assertEquals(" Fizz", FizzBuzz.generate(1, 3));
+        assertEquals(" 1 2 Fizz", FizzBuzz.generate(1, 3));
 
     }
     

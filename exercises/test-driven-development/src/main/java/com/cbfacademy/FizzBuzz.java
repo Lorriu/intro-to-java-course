@@ -34,7 +34,7 @@ public class FizzBuzz {
     public static Object generate(int i, int j) {
         
         
-         String str = " ";
+         String str = "";
             for (int k = i; k <= j; k++) {
                 str += " " + fizzBuzz(k);
             }
