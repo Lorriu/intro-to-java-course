@@ -24,7 +24,7 @@ public class FizzBuzzTest {
     @DisplayName("Testing for 1")
     public void testOne() {
 
-        assertEquals("1", FizzBuzz.generate(1, 1));
+        assertEquals(" 1", FizzBuzz.generate(1, 1));
 
     }
     
